@@ -26,20 +26,22 @@ Predict the delivery time of an order based on:
 
 ##  Project Structure
 
+##  Project Structure
+
+```
+
 project/
-├── data/
+├── data/                                                 # Raw & processed data
 │   ├── Food Delivery Time Prediction Case Study.xlsx    # Raw dataset
-│   ├── cleaned.csv                                      # Cleaned & preprocessed data
+│   └── cleaned.csv                                      # Cleaned & preprocessed data
 │   └── xg.joblib                                        # Trained XGBoost model
-│
-├── notebook/
-│   └── eda.ipynb                                        # Exploratory Data Analysis
-│
-├── src/
-│   ├── preprocessing.ipynb                              # Feature engineering & cleaning
-│   └── training.ipynb                                   # Model training & evaluation
+├── notebook/                  # EDA and prototyping
+│   └── eda.ipynb
+├── src/                       # Core modules
+│   ├── preprocessing.ipynb
+│   ├── training.ipynb
 
-
+````
 
 ##  Features Used
 
@@ -53,7 +55,7 @@ After preprocessing and engineering:
 
 ---
 
-## 📈 Model
+##  Model
 
 - **Model:** XGBoost Regressor
 - **Tuning:** GridSearchCV over `n_estimators`, `max_depth`, `learning_rate`
@@ -81,4 +83,3 @@ The trained model will be saved as data/xg.joblib.
 ---
 Author
 Sarfras-[https://www.linkedin.com/in/muhammedsarfras]
-
