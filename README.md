@@ -66,8 +66,7 @@ After preprocessing and engineering:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/delivery-time-prediction.git
-   cd delivery-time-prediction
+   git clone https://github.com/sarfraspc/Delivery-Time-Predictor.git
 Install requirements:
 
 pip install -r requirements.txt
